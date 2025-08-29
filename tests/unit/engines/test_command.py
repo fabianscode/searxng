@@ -35,7 +35,7 @@ DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.wolframalpha
 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): soundcloud.com
 DEBUG:searx.engines:find engine: Starting background initialization
 DEBUG:searx.engines:pattern search in files engine: Starting background initialization
-DEBUG:searx.webapp:starting webserver on 127.0.0.1:8888
+DEBUG:searx.webapp:starting webserver on 127.0.0.1:8000
 WARNING:werkzeug: * Debugger is active!
 INFO:werkzeug: * Debugger PIN: 299-578-362'''
         echo_engine = command_engine
@@ -97,7 +97,7 @@ INFO:werkzeug: * Debugger PIN: 299-578-362'''
         page2 = [
             {
                 'component': 'searx.webapp',
-                'message': 'starting webserver on 127.0.0.1:8888',
+                'message': 'starting webserver on 127.0.0.1:8000',
                 'level': 'DEBUG',
             },
             {

@@ -8,7 +8,7 @@
 
    server:
        base_url: http://example.org/location  # change this!
-       port: 8888
+       port: 8000
        bind_address: "127.0.0.1"
        secret_key: "ultrasecretkey"           # change this!
        limiter: false

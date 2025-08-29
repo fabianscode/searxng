@@ -186,11 +186,11 @@ container or in a script, test with curl:
 
        $ curl --location --verbose --head --insecure $SEARXNG_INTERNAL_HTTP
 
-       *   Trying 127.0.0.1:8888...
+       *   Trying 127.0.0.1:8000...
        * TCP_NODELAY set
-       * Connected to 127.0.0.1 (127.0.0.1) port 8888 (#0)
+       * Connected to 127.0.0.1 (127.0.0.1) port 8000 (#0)
        > HEAD / HTTP/1.1
-       > Host: 127.0.0.1:8888
+       > Host: 127.0.0.1:8000
        > User-Agent: curl/7.68.0
        > Accept: */*
        >

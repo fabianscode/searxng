@@ -1348,7 +1348,7 @@ def run():
     reloading as this is badly supported.  Instead you should be using the flask
     command line script’s run support::
 
-        flask --app searx.webapp run --debug --reload --host 127.0.0.1 --port 8888
+        flask --app searx.webapp run --debug --reload --host 127.0.0.1 --port 8000
 
     .. _Flask.run: https://flask.palletsprojects.com/en/stable/api/#flask.Flask.run
     """

@@ -101,12 +101,12 @@ Basic container instancing example:
 
    # Run the container
    $ docker run --name searxng --replace -d \
-       -p 8888:8080 \
+       -p 8000:8080 \
        -v "./config/:/etc/searxng/" \
        -v "./data/:/var/cache/searxng/" \
        docker.io/searxng/searxng:latest
 
-This will start SearXNG in the background, accessible at http://localhost:8888
+This will start SearXNG in the background, accessible at http://localhost:8000
 
 .. _Container management:
 
@@ -119,7 +119,7 @@ List running containers:
 
    $ docker container list
    CONTAINER ID  IMAGE  ...  CREATED        PORTS                   NAMES
-   1af574997e63  ...    ...  3 minutes ago  0.0.0.0:8888->8080/tcp  searxng
+   1af574997e63  ...    ...  3 minutes ago  0.0.0.0:8000->8080/tcp  searxng
 
 Access the container shell (troubleshooting):
 
