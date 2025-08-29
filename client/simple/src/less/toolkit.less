@@ -230,7 +230,7 @@ div.selectable_url {
 }
 
 ul.tabs {
-  border-bottom: 1px solid var(--color-toolkit-tabs-section-border);
+  border: 1px solid var(--color-toolkit-tabs-section-border);
   list-style: none;
   padding-left: 0;
 
@@ -260,8 +260,7 @@ ul.tabs {
     margin: 0 0.7em;
     letter-spacing: 0.5px;
     text-transform: uppercase;
-    border: solid var(--color-toolkit-tabs-label-border);
-    border-width: 0 0 2px 0;
+    border: 2px solid var(--color-toolkit-tabs-label-border);
     color: unset;
 
     .disable-user-select();
@@ -269,7 +268,7 @@ ul.tabs {
     cursor: pointer;
 
     &.active {
-      border-bottom: 2px solid var(--color-categories-item-border-selected);
+      border: 2px solid var(--color-categories-item-border-selected);
       background: var(--color-categories-item-selected);
       color: var(--color-categories-item-selected-font);
     }
@@ -277,7 +276,7 @@ ul.tabs {
 
   & > label:hover,
   & > li > a:hover {
-    border-bottom: 2px solid var(--color-categories-item-border-selected);
+    border: 2px solid var(--color-categories-item-border-selected);
   }
 
   & > section {
@@ -290,7 +289,7 @@ ul.tabs {
 
   // default selection
   & > label:last-of-type {
-    border-bottom: 2px solid var(--color-categories-item-border-selected);
+    border: 2px solid var(--color-categories-item-border-selected);
     background: var(--color-categories-item-selected);
     color: var(--color-categories-item-selected-font);
     letter-spacing: -0.1px;
@@ -309,18 +308,17 @@ html body .tabs > input:checked {
   ~ label {
     position: inherit;
     background: inherit;
-    border-bottom: 2px solid transparent;
+    border: 2px solid transparent;
     font-weight: normal;
     color: inherit;
 
     &:hover {
-      border-bottom: 2px solid var(--color-categories-item-border-selected);
+      background-color: var(--color-toolkit-select-background-hover)
     }
   }
 
   + label {
-    border-bottom: 2px solid var(--color-categories-item-border-selected);
-    background: var(--color-categories-item-selected);
+    background: var(--color-toolkit-select-background-hover);
     color: var(--color-categories-item-selected-font);
   }
 
@@ -399,7 +397,6 @@ input.checkbox-onoff[type="checkbox"] {
   height: 0.7em;
   box-shadow: none !important;
   margin: 0 16px;
-  border-radius: 10px;
   position: relative;
 
   /* focus & hover */
@@ -413,8 +410,6 @@ input.checkbox-onoff[type="checkbox"] {
     position: absolute;
     width: 3.5em;
     height: 1.65em;
-    border: 1px solid var(--color-btn-background);
-    border-radius: 12px;
     box-shadow: var(--color-btn-background) 0 0 3px;
     z-index: 1200;
     top: -0.55em;
@@ -430,7 +425,6 @@ input.checkbox-onoff[type="checkbox"] {
     font-size: 0.75em;
     width: 1.875em;
     height: 1.875em;
-    border-radius: 50%;
   }
 }
 
