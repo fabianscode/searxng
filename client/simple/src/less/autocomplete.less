@@ -3,12 +3,11 @@
 .autocomplete {
   position: absolute;
   width: @search-width;
-  max-width: calc(100% - 2 * @search-padding-horizontal);
+  margin-left: -3px;
+  max-width: 100%;
   max-height: 0;
   overflow-y: hidden;
   .ltr-text-align-left();
-
-  .rounded-corners;
 
   &:active,
   &:focus,
@@ -56,7 +55,7 @@
     overflow-y: auto;
     z-index: 5000;
     margin-top: 3.5rem;
-    border-radius: 0.8rem;
+    border: 3px solid var(--color-header-border);
 
     &:empty {
       display: none;
